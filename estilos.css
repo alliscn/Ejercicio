@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+#portada h1 {
+    font-family: "Fraunces", serif;
+    font-size: 2.8em;
+    color: rgb(204, 85, 30);
+    line-height: 0.9em;
+}
+
+#portada h2 {
+    font-weight: 350;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+#textos a {
+    color: rgb(204, 85, 30);
+    background-color: rgb(255, 219, 195);
+    display: inline-block;
+    padding: 0.7em;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 0.3em;
+}
+
+#textos #invertido {
+    background-color: transparent;
+    border: 2px solid rgb(204, 85, 30);
+    color: white;
+}
+
+#textos a:hover, #textos #invertido:hover {
+    background-color: rgb(204, 85, 30);
+    color: rgb(255, 219, 195);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -  */
+
+#portada {
+    background-image: url(rochelle-lee-LlCZS1V9qrA-unsplash.jpg);
+    min-height: 100vh;
+    /* para que la section ocupe toda la pantalla */
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 1.5em;
+    min-height: 15vh;
+    align-content: center;
+}
+
+#logo {
+    font-family: "Fraunces", serif;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+nav a {
+    color: white;
+    margin: 0.5em;
+}
+
+#textos {
+    min-height: 85vh;
+    align-content: center;
+    padding: 1.5em;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - -  */
+
+#exp {
+    background-color: rgb(204, 85, 30);
+    color: white;
+    min-height: 100vh;
+    align-content: center;
+    padding: 1em;
+}
+
+#exp h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+
+/* - - - - - - - - TABLET - - - - - - - - - -  */
+@media all and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #textos {
+        font-size: 1.2em;
+    }
+}
+
+
+/* - - - - - - - DESKTOP - - - - - - - - -  */
+@media all and (min-width:1200px) {
+    #portada h1 {
+        font-size: 4em;
+    }
+}
