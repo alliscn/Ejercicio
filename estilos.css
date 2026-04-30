@@ -13,6 +13,7 @@ html {
 
 body {
     font-family: "Bricolage Grotesque", sans-serif;
+    overflow-x: hidden;
 }
 
 #portada h1 {
@@ -41,14 +42,14 @@ body {
 }
 
 #textos #invertido {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid rgb(204, 85, 30);
-    color: white;
+    color: rgb(204, 85, 30);
 }
 
 #textos a:hover, #textos #invertido:hover {
     background-color: rgb(204, 85, 30);
-    color: rgb(255, 219, 195);
+    color: white;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - -  */
@@ -94,14 +95,56 @@ nav a {
     color: white;
     min-height: 100vh;
     align-content: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 #exp h2 {
     text-align: center;
     font-size: 3em;
     margin-bottom: 1em;
+    width: 100%;
 }
+
+#exp h3 {
+    font-size: 1.5em;
+}
+
+#exp p {
+    color: black;
+}
+
+#exp article {
+    color: rgb(204, 85, 30);
+    background-color: white;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: start;
+    position: relative;
+    padding-bottom: 4em;
+}
+
+#exp a {
+    color: white;
+    background-color: rgb(204, 85, 30);
+    border-radius: 20px;
+    padding: 0.5em;
+    border: 2px solid transparent;
+    position: absolute;
+    /* para que los botones siempre queden abajo del todo */
+    bottom: 1em;
+
+}
+
+#exp a:hover {
+    color: rgb(204, 85, 30);
+    background-color: white;
+    border: 2px solid rgb(204, 85, 30);
+}
+
 
 
 /* - - - - - - - - TABLET - - - - - - - - - -  */
@@ -115,6 +158,20 @@ nav a {
     #textos {
         font-size: 1.2em;
     }
+
+    #exp {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        padding: 20%;
+        margin-bottom: 0;
+    }
+
+    #exp article {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
 }
 
 
@@ -122,5 +179,13 @@ nav a {
 @media all and (min-width:1200px) {
     #portada h1 {
         font-size: 4em;
+    }
+
+    #exp article {
+        flex-basis: 30%;
+    }
+
+    #textos h2 {
+        color: rgb(204, 85, 30);
     }
 }
