@@ -54,7 +54,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - -  */
 
 #portada {
-    background-image: url(rochelle-lee-LlCZS1V9qrA-unsplash.jpg);
+    background-image: url(img/rochelle-lee-LlCZS1V9qrA-unsplash.jpg);
     min-height: 100vh;
     /* para que la section ocupe toda la pantalla */
     background-size: cover;
